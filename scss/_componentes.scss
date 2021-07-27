@@ -1,0 +1,102 @@
+// $azulNeon: hsl(232, 88%, 48%);
+
+.neon-button{
+    color: $azul;
+    font-size: 1.4rem;
+    display: inline-block;
+    cursor: pointer;
+    border: $azul 0.125em solid;
+    padding: 0.25em 1em;
+    border-radius: 0.25em;
+
+    text-shadow: 0 0 0.125em $azul;
+
+    box-shadow:
+    inset 0 0 0.5em 0 $azul,
+    0 0 0.5em 0 $azul;
+
+    position: relative;
+
+    transition: background-color 100ms linear;
+}
+
+.neon-button::before{
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    background-color: $azul;
+    top: 120%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    transform: perspective(1em) rotateX(40deg) scale(1,0.35);
+    filter: blur(1.5em);
+    opacity: 0.7;
+}
+
+.neon-button::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 2em 0.5em $azul;
+    opacity: 0;
+    transition: opacity 100ms linear;
+}
+
+.neon-button:hover,.neon-button:focus{
+    background: $azul;
+    color: $negro;
+    text-shadow: none;
+
+}
+
+.neon-button:hover::before, .neon-button:focus::before{
+    opacity: 1;
+}
+
+.neon-button:hover::after, .neon-button:focus::after{
+    opacity: 1;
+}
+
+.neon-button-nav{
+    color: $blanco;
+    font-size: 1.4rem;
+    display: inline-block;
+    cursor: pointer;
+    border: $blanco 0.125em solid;
+    padding: 0.25em 1em;
+    border-radius: 0.25em;
+
+    text-shadow: 0 0 0.125em $blanco;
+
+    box-shadow:
+    inset 0 0 0.5em 0 $blanco,
+    0 0 0.5em 0 $blanco;
+}
+
+.neon-button-nav:hover,.neon-button-nav:focus{
+    color: $negro !important;
+    background: $blanco;
+    text-shadow: none;
+
+}
+
+
+.btn-enviar{
+    color: $blanco;
+    border-radius: 0.25em;
+    padding: 0.2em 1em;
+    margin-top: 20px;
+}
+
+input:focus{
+    border: $azul;
+}
+
+textarea:focus{
+    border: $azul;
+}

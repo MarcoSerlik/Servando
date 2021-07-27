@@ -1,0 +1,19 @@
+html{
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    //border: solid red 1px;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+}
+a {
+    text-decoration: none; 
+}
+
+@import "colores";
+@import "tipos";
+@import "componentes";
+@import "index";

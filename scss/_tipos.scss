@@ -1,0 +1,43 @@
+.ghostTitulo{
+    font-size: 4.5rem;
+    font-weight: 700;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: $blanco;
+    text-shadow: 
+            4px 4px $azul,
+}
+
+.liveTitulo{
+    font-size: 8rem;
+    font-weight: 900;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: white;
+    text-shadow: 
+            6px 6px $azul,
+}
+
+
+.setsTitulo{
+    font-size: 4rem;
+    font-weight: 900;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2.5px;
+    -webkit-text-stroke-color: white;
+}
+
+.bodyText{
+    font-size: 1.1rem !important;
+    font-weight: 300;
+}
+
+.bodySubText{
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.footerCopyText{
+    font-size: 0.6rem;
+    font-weight: 300;
+}
