@@ -89,8 +89,12 @@
 .btn-enviar{
     color: $blanco;
     border-radius: 0.25em;
-    padding: 0.2em 1em;
     margin-top: 20px;
+}
+
+.btn-enviar:active{
+    outline: none;
+    border: none;
 }
 
 input:focus{
@@ -99,4 +103,8 @@ input:focus{
 
 textarea:focus{
     border: $azul;
+}
+
+textarea{
+    color: $blanco;
 }

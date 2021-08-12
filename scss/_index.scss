@@ -9,9 +9,19 @@ header{
 main{
     height: 100%;
     width: 100%;
-    background-image: url(../img/fondoMain.png);
+    background-image: url(../img/fondoFinal.svg);
     background-position: center;
     background-size: cover;
+}
+
+#subMain{
+    background-image: url(../img/fondoFinal.svg);
+    background-position: center;
+    background-size: cover;
+}
+
+#portada img{
+    width: 100%;
 }
 
 .nombreBio{
@@ -21,11 +31,15 @@ main{
     font-size: 2.2rem;
 }
 
+.sombrasTexto{
+    text-shadow: 0 0 0.3em $azul;
+}
+
 .subMain{
     height: auto;
     width: 100%;
     background-color: #121212;
-    background-image: url(../img/fondoMain.png);
+    background-image: url(../img/fondoMain.svg);
     background-position: center;
     background-size: cover;
 }
@@ -101,9 +115,9 @@ footer i{
 }
 
 #spotify{
-    height: 80vh;
+    height: 520px;
     width: 100%;
-    background-image: url(../img/fondoSpoty.png);
+    background-image: url(../img/fondoSpoty.jpeg);
     background-position: center;
     background-size: cover;
     iframe{
@@ -137,12 +151,24 @@ input{
     border: solid $blanco 1px;
     background-color: $negro;
     height: 40px;
+    color: white;
+}
+
+input:focus{
+    border: solid $blanco 3px;
+    outline: none;
 }
 
 textarea{
     border: solid $blanco 1px;
     background-color: $negro;
     height: 125px;
+}
+
+textarea:focus{
+    border: solid $blanco 3px;
+    outline: none;
+    color: white;
 }
 
 footer{
