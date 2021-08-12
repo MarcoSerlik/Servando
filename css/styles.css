@@ -121,14 +121,20 @@ a {
 .btn-enviar {
   color: #FFFFFF;
   border-radius: 0.25em;
-  padding: 0.2em 1em;
   margin-top: 20px; }
+
+.btn-enviar:active {
+  outline: none;
+  border: none; }
 
 input:focus {
   border: #0F2BE8; }
 
 textarea:focus {
   border: #0F2BE8; }
+
+textarea {
+  color: #FFFFFF; }
 
 header {
   background-color: #121212; }
@@ -138,9 +144,17 @@ header {
 main {
   height: 100%;
   width: 100%;
-  background-image: url(../img/fondoMain.png);
+  background-image: url(../img/fondoFinal.svg);
   background-position: center;
   background-size: cover; }
+
+#subMain {
+  background-image: url(../img/fondoFinal.svg);
+  background-position: center;
+  background-size: cover; }
+
+#portada img {
+  width: 100%; }
 
 .nombreBio {
   color: #0F2BE8;
@@ -148,11 +162,14 @@ main {
   text-shadow: 0 0 0.3em #0F2BE8;
   font-size: 2.2rem; }
 
+.sombrasTexto {
+  text-shadow: 0 0 0.3em #0F2BE8; }
+
 .subMain {
   height: auto;
   width: 100%;
   background-color: #121212;
-  background-image: url(../img/fondoMain.png);
+  background-image: url(../img/fondoMain.svg);
   background-position: center;
   background-size: cover; }
 
@@ -210,9 +227,9 @@ footer i {
     width: 100%; }
 
 #spotify {
-  height: 80vh;
+  height: 520px;
   width: 100%;
-  background-image: url(../img/fondoSpoty.png);
+  background-image: url(../img/fondoSpoty.jpeg);
   background-position: center;
   background-size: cover; }
   #spotify iframe {
@@ -237,12 +254,22 @@ label {
 input {
   border: solid #FFFFFF 1px;
   background-color: #121212;
-  height: 40px; }
+  height: 40px;
+  color: white; }
+
+input:focus {
+  border: solid #FFFFFF 3px;
+  outline: none; }
 
 textarea {
   border: solid #FFFFFF 1px;
   background-color: #121212;
   height: 125px; }
+
+textarea:focus {
+  border: solid #FFFFFF 3px;
+  outline: none;
+  color: white; }
 
 footer {
   background-color: #000000; }
